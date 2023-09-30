@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+public class Main {
+    public static void main(String[] args) {
+        Map<Integer, String> numbersAndNames = new HashMap<Integer, String>();
+        numbersAndNames.put(6260, "Egor");
+        numbersAndNames.put(4545, "Alex");
+        numbersAndNames.put(2435, "Igor");
+        System.out.println(numbersAndNames.get(4545));
+        System.out.println(numbersAndNames.keySet());
+        System.out.println(numbersAndNames.values());
+        numbersAndNames.replace(6260, "Misha");
+        System.out.println(numbersAndNames.get(6260));
+        numbersAndNames.remove(6260);
+        System.out.println(numbersAndNames.values());
+        System.out.println(numbersAndNames.size());
+        numbersAndNames.clear();
+    }
+}

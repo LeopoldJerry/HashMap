@@ -1,0 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+public class Main {
+    public static void main(String[] args) {
+        Map<Integer, String> numbersAndNames = new HashMap<Integer, String>();
+        numbersAndNames.put(6260, "Egor");
+        numbersAndNames.put(4545, "Alex");
+        numbersAndNames.put(2435, "Igor");
+        numbersAndNames.put(8686, "Misha");
+        for (Map.Entry<Integer, String> item:numbersAndNames.entrySet()) {
+            System.out.println("Ключ: " + item.getKey() + " Значение: " + item.getValue());
+        }
+    }
+}
